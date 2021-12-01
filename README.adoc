@@ -1,0 +1,10 @@
+= Advent Of Code 2021
+
+This repo houses my soultions for the challenges from https://adventofcode.com/2021[Advent Of Code 2021]
+
+== Runing
+
+[source,bash]
+----
+cargo run --bin day-1
+----
