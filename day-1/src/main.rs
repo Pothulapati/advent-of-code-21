@@ -37,8 +37,9 @@ fn part_2(input: &[i32]) -> i32 {
         if current_window > prev_window {
             count += 1;
         }
-
         prev_window = current_window;
     }
+
+    // TODO: Try to use rust iterators, maps, etc next time as much as possible.
     return count;
 }
