@@ -32,10 +32,7 @@ fn part_2(input: &Vec<Vec<i32>>) -> i128 {
     }
 
     total.sort();
-    total.reverse();
-    let mut ans: i128 = 1;
-    total.iter_mut().take(3).for_each(|x| ans *= *x as i128);
-    return ans;
+    return total[total.len() - 3..].into_iter().product();
 }
 
 // find_basin returns the size of the basin
